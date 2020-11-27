@@ -45,11 +45,14 @@ header {
           padding: 8px 0;
           margin-left: 0px;
           text-align: center;
-          border: 1px solid white;
+          border: 1px solid $white;
         }
 
         a {
-          color: white;
+          color: $white;
+          &:hover { 
+            border-bottom: 2px solid $white;
+          }
         }
 
       }
@@ -80,7 +83,7 @@ footer {
     color: white;
 
     &:hover {
-      border-bottom: 1px solid white;
+      border-bottom: 2px solid white;
     }
   }
 

@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 1.5;
+}
+
+h1,
+.h1 {
+  font-size: 4rem;
+  font-weight: 700;
+
+  @include lg {
+    font-size: 3rem;
+  }
+
+  @include md {
+    font-size: 2rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 3rem;
+
+  @include lg {
+    font-size: 2rem;
+  }
+
+  @include md {
+    font-size: 1.5rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 2.25rem;
+
+  @include lg {
+    font-size: 1.25rem;
+  }
+
+  @include md {
+    font-size: 1rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 2rem;
+
+  @include lg {
+    font-size: 1.5rem;
+  }
+
+  @include md {
+    font-size: 1rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.5rem;
+
+  @include lg {
+    font-size: 1.25rem;
+  }
+}
+
+.font {
+  &-rb {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &-tc {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  &-s {
+    font-size: 14px;
+  }
+
+
+  &-sm {
+    font-size: 20px;
+  }
+}
+
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+
+  &-medium {
+    font-weight: 500;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-bolder {
+    font-weight: 900;
+  }
+
+  &-brown {
+    color: $brown;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-primary {
+    color: $primary;
+  }
+
+  &-gray {
+    color: $gray;
+  }
+
+  &-ldark {
+    color: $ldark;
+  }
+
+  &-muted {
+    color: $muted;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: $primary;
+  }
+
+  &-pink {
+    background-color: $pink;
+  }
+
+  &-brown {
+    background-color: $brown;
+    color: white;
+  }
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @include lg {
+    width: 690px;
+  }
+
+  @include md {
+    max-width: 345px;
+  }
+
+  &-pd {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 64px 0 80px 0;
+
+    @include lg {
+      width: 690px;
+      padding: 40px 0;
+    }
+
+    @include md {
+      max-width: 345px;
+      padding: 32px 0;
+    }
+  }
+}
+
+
+.title {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  margin-bottom: 60px;
+
+  @include lg {
+    margin-bottom: 32px;
+  }
+
+  @include md {
+    margin-bottom: 20px;
+  }
+
+}

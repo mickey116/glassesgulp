@@ -1,23 +1,27 @@
-$color: #00cc99;
+@import './helper/variables';
+@import './helper/space';
+@import './helper/flex';
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import './config/media';
+@import './config/reset';
+@import './config/reboot';
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import 'layout';
+
+@import './components/infoBanner';
+@import './components/blogNav';
+@import './components/pagination';
+@import './components/productsNav';
+@import './components/productsBanner';
+
+
+@import './pages/index';
+@import './pages/productsOptical';
+@import './pages/productsSunglasses';
+@import './pages/locations';
+@import './pages/locationDetail';
+@import './pages/blog';
+@import './pages/blogDetail';
+@import './pages/faq';

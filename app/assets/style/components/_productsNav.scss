@@ -1,0 +1,61 @@
+.productsNav {
+  &_inner {
+    max-width: 1386px;
+    margin: 0 auto;
+
+    li {
+      border: 1px solid #dcdcdc;
+      width: calc(100% / 3);
+    }
+
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      justify-content: center;
+      align-items: center;
+      font-size: 42px;
+      padding: 24px 0 16px 0;
+      color: $dark;
+
+      @include lg {
+        font-size: 28px;
+        line-height: 24px;
+        padding: 18px 51px;
+      }
+
+      @include md {
+        font-size: 14px;
+        line-height: 19px;
+        padding: 8px 0 4px 0;
+
+      }
+    }
+
+    img {
+      @include lg {
+        width: 32px;
+        height: 32px;
+      }
+
+      @include md {
+        width: 14px;
+        height: 14px;
+
+      }
+    }
+
+    .active {
+      border-bottom: 16px solid $primary;
+
+      @include lg {
+        border-bottom: 8px solid $primary;
+      }
+
+      @include md {
+        border-bottom: 4px solid $primary;
+      }
+    }
+
+  }
+
+}

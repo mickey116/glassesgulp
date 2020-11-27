@@ -1,0 +1,46 @@
+.infoBanner {
+  background-image: url('../images/qa.png');
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 304px;
+
+  @include lg {
+    background-position: 30% 20%;
+  }
+
+  @include md {
+    background-position: 30% 70%;
+    height: 143px;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .infoTitle {
+    @include lg {
+      h2 {
+        font-size: 48px;
+        margin-right: 16px;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    @include md {
+      h2 {
+        font-size: 28px;
+        margin-right: 8px;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

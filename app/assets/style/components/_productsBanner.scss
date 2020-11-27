@@ -1,0 +1,18 @@
+.productsBanner {
+  &_item {
+    width: calc(100% / 2 - 30px);
+    height: 309px;
+
+    @include lg {
+      width: calc(100% / 2);
+    }
+    @include md {
+      height: 145px;
+    }
+    img{
+      height: 100%;
+    }
+  }
+
+  
+}

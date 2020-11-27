@@ -1,0 +1,28 @@
+.pagination {
+  a {
+    display: block;
+    border: 1px solid $gray;
+    padding: 10px 17px;
+    color: $dark;
+    font-size: 18px;
+    line-height: 27px;
+    color:$gray;
+  }
+
+  .active {
+    background-color: $dark;
+    color: $white;
+  }
+
+  .next {
+    background-color: #f2f2f2;
+  }
+
+  @include md {
+    a {
+      padding: 8px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,268 @@
+.article {
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 8px 0 304px 0;
+
+  @include lg {
+    padding: 8px 0 104px 0;
+  }
+
+  @include lg {
+    padding: 8px 0 56px 0;
+  }
+
+  .breadcrumb {
+    margin-bottom: 17px;
+
+    @include lg {
+      margin-bottom: 8px;
+    }
+
+    @include md {
+      margin-bottom: 6px;
+    }
+
+    &_item {
+      position: relative;
+      margin-right: 32px;
+
+
+      @include lg {
+        font-size: 14px;
+      }
+
+      @include md {
+        margin-right: 16px;
+      }
+
+      a {
+        color: $dark;
+      }
+
+      &:first-of-type::before {
+        content: '';
+      }
+
+      &::before {
+        content: '/';
+        color: $dark;
+        position: absolute;
+        left: -20px;
+
+        @include lg {
+          top: -2px;
+        }
+
+        @include md {
+          left: -10px;
+        }
+      }
+    }
+  }
+
+
+  .articleTag {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    @include lg {
+      font-size: 16px;
+    }
+
+    @include md {
+      font-size: 14px;
+    }
+
+    a:first-of-type {
+      @include lg {
+        margin-right: 8px;
+      }
+
+      @include md {
+        margin-right: 4px;
+      }
+    }
+
+
+  }
+
+  .articleMain {
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  .content {
+    width: calc(75% - 30px);
+    @include md {
+      width: 100%;
+    }
+
+    &_title {
+      line-height: 95px;
+    }
+
+    &_subtitle {
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    &_date {
+      font-size: 16px;
+      color: #6C6C6C;
+    }
+
+    &_item {
+      margin-bottom: 36px;
+
+      @include lg {
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-weight: 700;
+        color: RGBA(10, 10, 10, .6);
+
+        @include lg {
+          font-size: 16px;
+          text-align: left;
+          padding: 0;
+        }
+        @include md {
+          br{
+            display: none;
+          }
+        }
+      }
+
+      .brnone {
+        @include lg {
+          display: none;
+        }
+      }
+
+      .brblock {
+        display: none;
+
+        @include lg {
+          display: block;
+        }
+        @include md {
+          display:none;
+        }
+      }
+    }
+
+    &_share {
+      padding-bottom: 16px;
+      border-bottom: 1px solid $muted;
+
+      img {
+        @include lg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      @include md {
+        padding-bottom: 11px;
+      }
+    }
+
+    &_linkTo {
+      margin-top: 24px;
+
+      @include lg {
+        margin-top: 16px;
+      }
+
+      @include md {
+        flex-direction: column;
+      }
+
+      a {
+        font-size: 19px;
+        line-height: 30px;
+        color: $dark;
+
+        span {
+          margin: 0 8px;
+        }
+
+        &:hover {
+          color: $primary;
+        }
+
+        @include lg {
+          font-size: 16px;
+
+          img {
+            width: 20px;
+            height: 17.5px;
+          }
+        }
+
+        @include md {
+          font-size: 14px;
+
+          img {
+            width: 16px;
+            height: 14px;
+          }
+        }
+      }
+
+      .next {
+        @include md {
+          flex-direction: row-reverse;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  .hashtag {
+    width: 25%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+    @include md {
+      width: 100%;
+    }
+
+    &_title {
+      font-size: 28px;
+
+      img {
+        @include lg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      @include md {
+        font-size: 20px;
+        margin-bottom: 11px;
+        margin-top: 39px;
+      }
+    }
+
+    &_item {
+      a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: $primary;
+        font-size: 24px;
+        line-height: 36px;
+        margin-right: 24px;
+
+        @include lg {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

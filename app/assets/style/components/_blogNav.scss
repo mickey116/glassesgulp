@@ -1,0 +1,37 @@
+.blogNav {
+  &_list {
+    li {
+      margin-right: 48px;
+      font-size: 20px;
+      @include lg{
+        margin-right: 32px;
+        font-size: 16px;
+      }
+      @include md {
+        margin-right: 24px;
+      }
+      a {
+        padding: 12px 0 14px 0;
+        display: inline-block;
+        color: white;
+        @include lg{
+          padding:16px 0;
+        }
+        &:hover {
+          color:#ccc;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  &_search {
+    @include md {
+      display: none;
+    }
+  }
+
+
+}

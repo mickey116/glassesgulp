@@ -1,0 +1,64 @@
+---
+title: 門市據點詳情
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="infoBanner">
+  <div class="container d-flex align-items-end">
+    <div class="infoBanner_title d-flex align-items-center">
+      <h2 class="h1 mr-2">門市據點</h2>
+      <img src="./assets/images/icon-location.svg" alt="icon-location" />
+    </div>
+  </div>
+</div>
+<div class="storeInfo">
+  <div class="container">
+    <div class="storeSelect d-flex align-items-center">
+      <label for="store" class="branchSelect">選擇地區</label>
+      <select name="store" id="store">
+        <option value="台北中山旗艦店" selected>
+          台北中山旗艦店
+        </option>
+        <option value="桃園市旗艦店">桃園市旗艦店</option>
+        <option value="新竹市旗艦店">新竹市旗艦店</option>
+        <option value="台中市旗艦店">台中市旗艦店</option>
+        <option value="台南市旗艦店">台南市旗艦店</option>
+        <option value="高雄市旗艦店">高雄市旗艦店</option>
+      </select>
+    </div>
+    <div class="storeCard d-flex justify-content-between">
+      <div class="storeCard_detail">
+        <img src="./assets/images/locate.png" alt="locate"
+        class="storeCard_detail_img">
+        <div class="storeCard_txt">
+          <div class="storeCard_detail_header h5">
+            台北中山旗艦店
+          </div>
+          <ul class="storeCard_detail_body">
+            <li class="d-flex align-items-center">
+              <img src="./assets/images/icon-phone.svg" alt="icon-phone">
+              <p>電話：(02)000-1234</p>
+            </li>
+            <li class="d-flex align-items-center">
+              <img src="./assets/images/icon-clock.svg" alt="icon-clock">
+              <p>營業時間：10:00-21:00</p>
+            </li>
+            <li class="d-flex">
+              <img src="./assets/images/icon-map.svg" alt="icon-map">
+              <p>地址：台北市中山區南京東路25巷2-1號</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="storeCard_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0027469641573!2d121.56234485010586!3d25.0339808443686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5L-h576p6Lev5LqU5q61N-iZnw!5e0!3m2!1szh-TW!2stw!4v1606304874680!5m2!1szh-TW!2stw"
+          width="635" height="456.41" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,104 @@
+.sunglasses {
+  padding: 88px 0 192px 0;
+
+  @include lg {
+    padding: 40px 0 104px 0;
+  }
+
+  @include md {
+    padding: 30px 0 56px 0;
+  }
+
+  &_item {
+    width: calc(100% / 3 - 30px);
+    margin-bottom: 112px;
+
+    @include lg {
+      width: calc(100% / 2 - 30px);
+      margin-bottom: 72px;
+    }
+
+    @include md {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    &:last-of-type {
+      @include lg {
+        margin-bottom: 105px;
+      }
+
+      @include md {
+        margin-bottom: 40px;
+      }
+    }
+
+
+    img {
+      @include lg {
+        width: 100%;
+      }
+    }
+
+    &_content {
+      font-size: 18px;
+      line-height: 30px;
+
+      p {
+        margin-bottom: 8px;
+
+        @include lg {
+          margin-bottom: 0;
+        }
+      }
+
+      @include lg {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+      }
+
+      @include md {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+
+    &_color {
+      .darkBrown {
+        background-color: #5f3e2d;
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+
+        @include md {
+          width: 17px;
+          height: 17px;
+          margin-right: 4px;
+        }
+      }
+
+      .lightBrown {
+        background-color: #b75929;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+
+        @include md {
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
+
+  }
+
+  .pagination {
+    display: none;
+
+    @include lg {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,432 @@
+.banner {
+  background: url('https://hexschool.github.io/webLayoutTraining1st/week3/banner.png') center center no-repeat;
+
+  height: 840px;
+
+  @include lg {
+    background: url('https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png') center center no-repeat;
+    background-size: cover;
+  }
+  @include md {
+    height: 394px;
+  }
+
+  &_txt {
+    @include md {
+      p {
+        font-family: -apple-system;
+      }
+    }
+  }
+}
+
+.service {
+  &_inner {
+    color: $brown;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+
+  }
+
+
+  &_detail {
+    justify-content: space-between;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
+
+    &_item {
+      width: calc(100% / 4 - 30px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include lg {
+        width: calc(100% / 2 - 50px);
+        margin-bottom: 40px;
+      }
+
+      @include md {
+        width: 100%;
+      }
+
+      &:first-of-type {
+        @include lg {
+          order: 1;
+
+        }
+
+      }
+
+      &:last-of-type {
+        @include lg {
+          order: 2;
+        }
+
+        @include md {
+          margin-bottom: 24px;
+        }
+      }
+
+
+
+      &_img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+
+        @include lg {
+          margin-bottom: 16px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        padding: 0 15px;
+        text-align: justify;
+        color: $dark;
+
+        @include lg {
+          padding: 0 30px;
+          text-align: left;
+        }
+
+        @include md {
+          padding: 0 55px;
+        }
+      }
+    }
+  }
+
+}
+
+.classic {
+  color: $primary;
+  font-family: 'Roboto', sans-serif;
+
+  &_item {
+    margin-bottom: 32px;
+
+    &:nth-of-type(2) {
+      .classic_item_info {
+        flex-direction: row-reverse;
+
+        @include lg {
+          flex-direction: row
+        }
+      }
+
+      .classic_item_info_img {
+        margin-left: 30px;
+
+        @include lg {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &_info {
+      @include md {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &_img {
+        width: 57%;
+        margin-right: 30px;
+
+        @include md {
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+
+      &_function {
+        @include md {
+          position: absolute;
+        }
+
+        img {
+          width: 48px;
+          height: 48px;
+          margin-right: 8px;
+
+          @include lg {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .red {
+          @include md {
+            display: none
+          }
+        }
+
+        .white {
+          display: none;
+
+          @include md {
+            display: block;
+          }
+        }
+
+        .classic_category {
+          color: $primary;
+          font-weight: 900;
+
+          @include lg {
+            font-size: 28px;
+          }
+
+          @include md {
+            color: white;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.design {
+  background: url('https://hexschool.github.io/webLayoutTraining1st/week3/bg.png') center center no-repeat;
+  height: 743px;
+  padding: 64px 0 80px 0;
+
+  @include lg {
+    padding: 40px 0;
+  }
+
+  @include md {
+    padding: 32px 0;
+  }
+
+  &_list {
+    @include md {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  &_item {
+    position: relative;
+    width: calc(100% / 2 - 30px);
+
+    .mask {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 1;
+    }
+
+    @include md {
+      width: 100%;
+    }
+
+    &_title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      font-size: 72px;
+      width: 100%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      color: $primary;
+
+      @include lg {
+        font-size: 32px;
+      }
+    }
+
+    &:first-of-type {
+      @include md {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+
+}
+
+.rec {
+  padding: 64px 0 80px 0;
+
+  @include lg {
+    padding: 40px 0;
+  }
+
+  @include md {
+    padding: 32px 0;
+  }
+
+  &_item {
+    width: calc(100% / 4 - 30px);
+
+    @include lg {
+      width: calc(100% / 2 - 30px);
+    }
+
+    @include md {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    border: 1px solid #DEE2E6;
+    line-height: 1.5;
+    font-family: 'Roboto',
+    sans-serif;
+
+    &_img {
+      @include md {
+        width: 100%;
+      }
+    }
+
+    &_txt {
+      padding: 14px 16px;
+
+      @include lg {
+        padding: 16px;
+      }
+
+      p {
+        @include lg {
+          margin: 16px 0;
+        }
+      }
+    }
+
+    &:first-of-type {
+      @include lg {
+        margin-bottom: 28px;
+      }
+
+      @include md {
+        margin-bottom: 16px;
+      }
+
+    }
+
+    &:nth-of-type(2) {
+      @include lg {
+        margin-bottom: 28px;
+      }
+
+      @include md {
+        margin-bottom: 16px;
+      }
+    }
+
+    &:last-of-type {
+      @include md {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+.contactus {
+  padding: 64px 0 80px 0;
+
+  @include lg {
+    padding: 40px 0;
+  }
+
+  @include md {
+    padding: 32px 0;
+  }
+
+  &-inner {
+    max-width: 730px;
+    margin: 0 auto;
+    line-height: 1.5;
+    @include lg{
+      max-width: 450px;
+    }
+    @include md {
+      width: 345px;
+    }
+  }
+  &_title{
+    font-weight: 700;
+    @include lg {
+      margin-bottom: 16px;
+    }
+    @include md {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_txt {
+    font-size: 20px;
+    margin-bottom: 20px;
+    @include lg {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    @include md {
+      margin-bottom: 8px;
+    }
+  }
+
+  &_form {
+    font-size: 14px;
+    &_group {
+      input,
+      textarea {
+        width: 100%;
+        padding: 14px 16px;
+        margin-bottom: 16px;
+        @include lg {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &_agree {
+      margin-bottom: 42px;
+      @include lg {
+        margin-bottom: 20px;
+        display: flex;
+      }
+      @include md {
+        margin-bottom: 24px;
+      }
+    }
+    &_submit{
+      input{
+        width: 350px;
+        background-color: $primary;
+        color:white;
+        padding: 16px 0;
+        cursor: pointer;
+        @include lg{
+          width: 210px;
+          padding:8px 0;
+        }
+        @include md {
+          width: 165px;
+        }
+      }
+    }
+  }
+
+}

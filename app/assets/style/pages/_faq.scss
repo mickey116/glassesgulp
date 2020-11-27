@@ -1,0 +1,67 @@
+.faq {
+  font-family: 'Noto Sans TC', sans-serif;
+  padding:80px 0 224px 0;
+
+  @include lg {
+    padding: 40px 0 64px 0;
+  }
+  @include md {
+    padding: 24px 0 36px 0;
+  }
+
+
+  &_title {
+    margin-bottom: 36px;
+    font-weight: 700;
+
+    @include lg {
+      font-size: 32px;
+    }
+
+    @include md {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &_ques {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 700;
+
+    @include md {
+      font-size: 16px;
+    }
+  }
+
+
+  &_ans {
+    margin-left: 95px;
+    margin-bottom: 40px;
+    line-height: 24px;
+
+    @include lg {
+      margin-left: 59px;
+
+    }
+
+    @include md {
+      margin-bottom: 20px;
+      margin-left: 0;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: justify;
+    }
+  }
+  .wrapnone {
+    @include md{
+      display: none;
+    }
+  }
+  .wrap {
+    display:none;
+    @include md{
+      display:block;
+    }
+  }
+}
